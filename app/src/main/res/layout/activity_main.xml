@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_image"
+        style="@style/img_style"
+        android:src="@drawable/ic_image" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_url"
+        style="@style/view_style"
+        android:layout_below="@id/iv_image"
+        android:hint="@string/enter_url" />
+
+    <Button
+        android:id="@+id/btn_sumbit"
+        android:layout_below="@id/et_url"
+        style="@style/view_style"
+        android:text="@string/sumbit"/>
+
+    <Button
+        android:id="@+id/btn_random"
+        android:layout_below="@id/btn_sumbit"
+        style="@style/view_style"
+        android:text="@string/random"/>
+
+</RelativeLayout>
